@@ -40,10 +40,14 @@ export default {
         <div class="forms">
             <q-card class="my-card">
                 <q-card-section>
-                    <p class="mt-2">Login</p>
+                    <p class="mt-2">Cadastro</p>
                     <q-form @submit="onSubmit" class="q-col-gutter-md" ref="myForm">
-                        <q-input filled v-model="email" label="Email" type="email" />
-                        <q-input filled v-model="password" label="Senha" type="password" />
+                        <q-input filled v-model="name" label="Nome" hint="Digite o nome completo" lazy-rules
+                            :rules="[val => val && val.length > 7 || 'Nome inválido']" />
+                        <q-input filled v-model="email" label="Email" hint="Digite um email" type="email" lazy-rules
+                            :rules="[val => val && val.length > 7 || 'Insira um email válido']" />
+                        <q-input filled v-model="password" label="Senha" hint="Digite uma senha" type="password"
+                            lazy-rules :rules="[val => val && val.length >= 6 || 'Mínimo de 6 caracteres']" />
 
                         <div>
                             <q-btn label="Cadastrar" type="submit" color="primary" />

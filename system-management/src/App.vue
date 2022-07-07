@@ -2,13 +2,15 @@
 import Register from "./components/Register.vue";
 export default {
   components: {
-    Register
-  }
-}
+    Register,
+  },
+};
 </script>
 
 <template>
-  <Register />
+  <div>
+    <router-view></router-view>
+  </div>
 </template>
 
 <style>

@@ -6,9 +6,9 @@ export default {
   setup() {
     const $q = useQuasar();
 
-    const name = ref("Marcus Vinicius");
-    const email = ref("marquin@hotmail.com");
-    const password = ref("1234567");
+    const name = ref("");
+    const email = ref("");
+    const password = ref("");
     const loading = ref(false);
     const progress = ref(false);
     const simulateProgress = ref(false);

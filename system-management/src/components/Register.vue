@@ -87,6 +87,7 @@ export default {
                 color="primary"
               />
             </div>
+            <router-link to="Login">Login</router-link>
           </q-form>
         </q-card-section>
       </q-card>

@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 function lazyLoad(page) {
-  return import(`./components/${page}.vue`);
+  return import(`./pages/${page}.vue`);
 }
 
 const routes = [
@@ -14,6 +14,11 @@ const routes = [
     path: "/login",
     name: "Login",
     component: lazyLoad("Login"),
+  },
+  {
+    path: "/",
+    name: "Home",
+    component: lazyLoad("Home"),
   },
 ];
 

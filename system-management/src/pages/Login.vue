@@ -35,7 +35,7 @@ export default {
 <template>
   <div class="container">
     <div class="logo">
-      <img alt="laptop logo" src="../assets/imgLaptop.png" />
+      <img alt="laptop logo" src="../assets/imgs/imgLaptop.png" />
     </div>
     <div class="forms">
       <q-card class="my-card">
@@ -44,7 +44,6 @@ export default {
           <q-form @submit="onSubmit" class="q-col-gutter-md" ref="myForm">
             <q-input filled v-model="email" label="Email" type="email" />
             <q-input filled v-model="password" label="Senha" type="password" />
-
             <div>
               <q-btn label="Entrar" type="submit" color="primary" />
             </div>

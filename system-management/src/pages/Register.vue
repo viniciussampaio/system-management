@@ -41,7 +41,7 @@ export default {
 <template>
   <div class="container">
     <div class="logo">
-      <img alt="laptop logo" src="../assets/imgLaptop.png" />
+      <img alt="laptop logo" src="../assets/imgs/imgLaptop.png" />
     </div>
     <div class="forms">
       <q-card class="my-card">

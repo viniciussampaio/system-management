@@ -18,7 +18,6 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: lazyLoad("Home"),
   },
 ];
 
